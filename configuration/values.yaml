@@ -8,9 +8,9 @@ zabbixServer:
   replicaCount: 1
   image:
     # zabbixServer.image.repository -- Zabbix server Docker image name
-    repository: zabbix/zabbix-server-pgsql
+    repository: pedrosm/zabbixteste
     # zabbixServer.image.tag -- Tag of Docker image of Zabbix server
-    tag: ubuntu-5.0.4
+    tag: latest
     # zabbixServer.image.pullPolicy -- Pull policy of Docker image
     pullPolicy: IfNotPresent
   # zabbixServer.DB_SERVER_HOST -- Address of database host
@@ -49,7 +49,7 @@ zabbixagent:
     # zabbixagent.image.repository -- Zabbix agent Docker image name
     repository: zabbix/zabbix-agent
     # zabbixagent.image.tag -- Tag of Docker image of Zabbix agent
-    tag: ubuntu-5.0.4
+    tag: ubuntu-latest
     # zabbixagent.image.pullPolicy -- Pull policy of Docker image
     pullPolicy: IfNotPresent
   # zabbixagent.ZBX_HOSTNAME -- Zabbix agent hostname
@@ -93,7 +93,7 @@ zabbixweb:
     # zabbixweb.image.repository -- Zabbix web Docker image name
     repository: zabbix/zabbix-web-apache-pgsql
     # zabbixweb.image.tag -- Tag of Docker image of Zabbix web
-    tag: ubuntu-5.0.4
+    tag: ubuntu-latest
     # zabbixweb.image.pullPolicy -- Pull policy of Docker image
     pullPolicy: IfNotPresent
   # zabbixweb.ZBX_SERVER_HOST -- Zabbix server host
