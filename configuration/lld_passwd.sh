@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#######################################################################################
-# Definicao de Variaveis:                                                             #
-# Estou usando passagem de parametros, mas nada de impede de definir os valores aqui. #
-#######################################################################################
 
 USER=$(cat /etc/passwd | cut -d: -f1)
 NOME=$(cat /etc/passwd | cut -d: -f5 | tr -d \")
@@ -28,10 +24,7 @@ do
 done
 
 
-#######################################################################################
-# Acabei de montar do primeiro ao penultimo registro				      #
-# agora vou montar o ultimo e fechar o arquivo JSON				      #
-#######################################################################################
+
 	echo -e "\t{" >> /tmp/lld_passwd.txt
 	echo -e "\t\t\"{#USER}\":\"`echo "$USER" | head -$LINHAS | tail -1`\"," >> /tmp/lld_passwd.txt
 	echo -e "\t\t\"{#NOME}\":\"`echo "$NOME" | head -26 | tail -1`\"," >> /tmp/lld_passwd.txt
@@ -43,16 +36,11 @@ echo -e "\t]" >> /tmp/lld_passwd.txt
 echo -e "}\n" >> /tmp/lld_passwd.txt
 
 
-#######################################################################################
-# Acabei de gerar o JSON com as variaveis que o Zabix precisa			      #
-# Mostro o conteudo na tela							      #
-#######################################################################################
+
 cat /tmp/lld_passwd.txt
 
 
-#######################################################################################
-# Gero o JSON no formato normal para ser usado pelo comando "jq"		      #
-#######################################################################################
+
 sed 's/{\#USER}/user/g' /tmp/lld_passwd.txt |  sed 's/{\#NOME}/nome/g' |  sed 's/{\#HOME}/home/g' |  sed 's/{\#SHELL}/shell/g' > /tmp/lld_passwd_2.txt
 ;;
 
