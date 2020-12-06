@@ -8,7 +8,7 @@ zabbixServer:
   replicaCount: 1
   image:
     # zabbixServer.image.repository -- Zabbix server Docker image name
-    repository: pedrosm/zabbixteste
+    repository: pedrosm/zabbix-bb
     # zabbixServer.image.tag -- Tag of Docker image of Zabbix server
     tag: latest
     # zabbixServer.image.pullPolicy -- Pull policy of Docker image
