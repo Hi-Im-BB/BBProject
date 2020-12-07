@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 USER=$(cat /etc/passwd | cut -d: -f1)
 NOME=$(cat /etc/passwd | cut -d: -f5 | tr -d \")
 HOME=$(cat /etc/passwd | cut -d: -f6 | sed 's/\//\\\//g')
@@ -38,8 +37,6 @@ echo -e "}\n" >> /tmp/lld_passwd.txt
 
 
 cat /tmp/lld_passwd.txt
-
-
 
 sed 's/{\#USER}/user/g' /tmp/lld_passwd.txt |  sed 's/{\#NOME}/nome/g' |  sed 's/{\#HOME}/home/g' |  sed 's/{\#SHELL}/shell/g' > /tmp/lld_passwd_2.txt
 ;;
