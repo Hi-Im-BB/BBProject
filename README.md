@@ -222,4 +222,4 @@ Em seguida, basta criar o alerta no zabbix, que será acionado caso o valor reto
 
 Podemos ver na página de monitoramento padrão do zabbix o script funcionando
 
-![Alt text](images/checkerfinal.png?raw=true "Alerta funcionando")
+![Alt text](images/checkefinal.png?raw=true "Alerta funcionando")
