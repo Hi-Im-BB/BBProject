@@ -23,6 +23,7 @@ do
 done
 
 
+
 	echo -e "\t{" >> /tmp/lld_passwd.txt
 	echo -e "\t\t\"{#USER}\":\"`echo "$USER" | head -$LINHAS | tail -1`\"," >> /tmp/lld_passwd.txt
 	echo -e "\t\t\"{#NOME}\":\"`echo "$NOME" | head -26 | tail -1`\"," >> /tmp/lld_passwd.txt
@@ -34,8 +35,8 @@ echo -e "\t]" >> /tmp/lld_passwd.txt
 echo -e "}\n" >> /tmp/lld_passwd.txt
 
 
-cat /tmp/lld_passwd.txt
 
+cat /tmp/lld_passwd.txt
 
 sed 's/{\#USER}/user/g' /tmp/lld_passwd.txt |  sed 's/{\#NOME}/nome/g' |  sed 's/{\#HOME}/home/g' |  sed 's/{\#SHELL}/shell/g' > /tmp/lld_passwd_2.txt
 ;;
