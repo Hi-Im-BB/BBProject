@@ -1,4 +1,4 @@
-﻿﻿# Overview
+# Overview
   
 Este repositório contem a documentação de todos os Issues abertos durante o processo de desenvolvimento da aplicação, bem como a discussão das questões teóricas envolvendo o projeto.
 
