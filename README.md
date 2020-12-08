@@ -1,6 +1,16 @@
 # Overview
 Este repositório contem a documentação de todos os Issues abertos durante o processo de desenvolvimento da aplicação, bem como a discussão das questões teóricas envolvendo o projeto.
 
+**Organização:**
+
+ - As questões 2,3 e 6 estão no arquivo [README.md](README.md) ;
+ - A questão 4 está no arquivo [DISCUSSION_API.md](DISCUSSION_API.md) ;
+ - A questão 5 pode ser lida em [Cenario.md](Cenario.md) ;
+ - A questão 7 está em [SERVER_STATUS.md](SERVER_STATUS.md) ;
+
+A documentação foi organizada de forma a prover links para os códigos de cada aplicação quando eles forem mencionados, para facilitar o entendimento e a navegação.
+
+
 O ambiente utilizado para o desenvolvimento do projeto foi um Cluster Kubernetes virtual utilizando o [Kind Cluster](https://kind.sigs.k8s.io/docs/user/quick-start/), que foi instalado numa máquina Windows via cholocatey.
 
 	$ choco install kind
