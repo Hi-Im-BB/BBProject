@@ -17,6 +17,8 @@ Além disso, caso a aplicação tenha um sistema de login, também é possível 
 
 Outra métrica relevante que tem relação com o comportamento do usuário é o horário que ele utiliza a aplicação, caso o tráfego esteja concentrado em horários específicos, é possível configurar um ambiente com grande escalabilidade em função disso.
 
+Além do horário, a localização do IP também é relevante, aplicações de monitoramento possuem funções para identificar da onde vem o request ao sistema e colocar num mapa. Este dado é relevante para, além de saber da onde seus usuários estão utilizando a aplicação, podemos identificar ataques ao sistema que visão manipular o resultado da votação, por exemplo, diversas requests vindas de IPs estrangeiros em padrões anormais, assim, seria simples para o administrador bloquear o bloco de IPs problemático.
+
 Quanto a métricas mais técnicas, que tem relação com o desempenho do sistema, podemos citar a quantidade, tamanho e disponibilidade de cada recurso físico, o tamanho da página, o tempo de load da aplicação, número de itens por página, o número de erros funcionais, chamadas de API, número de execuções SQL, uso de RAM, número de requests da aplicação.
 
 Todos estes dados são relevantes para monitorar a saúde da aplicação e estabelecer pontos em que ela pode ser otimizada.
@@ -26,6 +28,8 @@ Todos estes dados são relevantes para monitorar a saúde da aplicação e estab
 
 
 Para o serviço como um todo, existem diversas soluções de monitoramento que podemos adotar, dentre combinações mais populares, podemos citar o Prometheus + Grafana e o ELK.
+
+Propositalmente não será discutido o uso do Zabbix, já que ele já foi abordado em profundidade neste projeto, além de que, como veremos a frente, neste cenário possuimos opções com mais vantágens.
 
 **Prometheus**
 
