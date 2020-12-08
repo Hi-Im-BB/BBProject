@@ -4,9 +4,10 @@ Um certo número de clientes deseja monitorar algum componente relativo a sua ap
 
 # Brainstorm inicial & Estratégia
 
-O cenário descrito, em que os dados disponíveis para trabalho são o input,output e documentação do projeto, encaminha o pensamento do desenvolvedor para a criação de uma API para solucionar a demanda do cliente. 
+O cenário descrito, em que os dados disponíveis para trabalho são o input,output e documentação do projeto, encaminha o pensamento do desenvolvedor para a criação de uma API para solucionar a demanda do cliente, usando, por exemplo, Python e Python Flask para tratar as requisições e retornar apenas o dado relevante. 
 
 Outra solução seria utilizando softwares de monitoramento como o NAGIOS, um ambiente de teste para ativos de TI, entretanto, uma análise pontual da demanda indica que o método utilizando API, por ser mais focado nos projetos individuais, sem colocar uma interface com todos os elementos da rede para o usuário, seria mais eficiente.
+
 
 Utilizando métodos ágeis, uma forma correta de lidar com este tipo de demanda seria estruturar o problema utilizando as etapas de: Design de Testes, Avaliação dos resultados obtidos e Homologação ( Entrega + Aceite ) para o cliente.
 
